@@ -1,0 +1,34 @@
+//- - each job in jobs
+//-   div.sub-container.row
+//-     div.title.small-12.large-12.columns 
+//-         p #{job.title}  
+//-     div.description.display.small-12.large-12.columns
+//-         div.row
+//-             div.block.small-12.large-12.columns
+//-             p Skills and Requirements
+//-             ul
+//-                 - each skill in job.skills
+//-                 li #{skill}
+//-             div.block.small-12.large-12.columns
+//-             p Preferred Skills
+//-             ul
+//-                 - each pskill in job.pskills
+//-                 li  #{pskill}
+//-         button.apply.button(value="apply") Apply
+
+- each job in jobs
+  div.sub-container.row
+    div.title.small-12.large-12.columns 
+        p #{job.title}  
+    div.description.display.small-12.large-12.columns
+        div.row
+            +skillsBlock("Skills and Requirements", job.skills)
+            +skillsBlock("Preferred Skills", job.pskills)
+        button.apply.button(value="apply") Apply
+
+mixin skillsBlock(title, items)
+    div.block.small-12.large-12.columns
+    p= title
+    ul
+    - each skill in items
+        li  #{skill}

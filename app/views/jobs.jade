@@ -1,0 +1,9 @@
+extends layout.jade
+block append head 
+    script.
+        alert('Extended the head block!!')
+        
+block content
+  div#container.row
+    div.small-12.large-12.columns
+      include job-container.jade

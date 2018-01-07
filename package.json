@@ -1,0 +1,31 @@
+{
+  "name": "jadetohtml",
+  "version": "1.0.0",
+  "description": "A Jade playground",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kprabhuvel/JadeToHtml.git"
+  },
+  "keywords": [
+    "jade",
+    "html"
+  ],
+  "author": "Prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kprabhuvel/JadeToHtml/issues"
+  },
+  "homepage": "https://github.com/kprabhuvel/JadeToHtml#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jade": "^1.11.0"
+  }
+}
